@@ -46,16 +46,28 @@ class _MyHomePageState extends State<MyHomePage> {
       date: DateTime.now().subtract(Duration(days: 33)),
     ),
     Transaction(
-      id: 't0',
+      id: 't1',
       title: 'Novo mouse Wi-fi',
       value: 91.52,
       date: DateTime.now().subtract(Duration(days: 3)),
     ),
     Transaction(
-      id: 't0',
-      title: 'Quadro de rolha',
-      value: 110.00,
+      id: 't3',
+      title: 'Mandala para Sala',
+      value: 755.90,
       date: DateTime.now().subtract(Duration(days: 4)),
+    ),
+    Transaction(
+      id: 't4',
+      title: 'Grama sintetica',
+      value: 2015.00,
+      date: DateTime.now(),
+    ),
+    Transaction(
+      id: 't5',
+      title: 'Vidros Prateleira',
+      value: 40.00,
+      date: DateTime.now(),
     ),
   ];
 
