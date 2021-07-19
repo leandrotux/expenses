@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 class ChartBar extends StatelessWidget {
   final String label;
   final double value;
-  final double percentege;
+  final double percentage;
 
   ChartBar({
     this.label,
     this.value,
-    this.percentege,
+    this.percentage,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: <Widget>[
         Container(
           height: 20,
           child: FittedBox(
@@ -27,7 +27,7 @@ class ChartBar extends StatelessWidget {
           width: 10,
           child: Stack(
             alignment: Alignment.bottomCenter,
-            children: [
+            children: <Widget>[
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(
@@ -39,7 +39,7 @@ class ChartBar extends StatelessWidget {
                 ),
               ),
               FractionallySizedBox(
-                heightFactor: percentege,
+                heightFactor: percentage,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Theme.of(context).primaryColor,

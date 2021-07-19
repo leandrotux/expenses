@@ -36,6 +36,7 @@ class _TransactionFormState extends State<TransactionForm> {
       if (pickedDate == null) {
         return;
       }
+
       setState(() {
         _selectedDate = pickedDate;
       });
@@ -49,7 +50,7 @@ class _TransactionFormState extends State<TransactionForm> {
       child: Padding(
         padding: const EdgeInsets.all(10),
         child: Column(
-          children: [
+          children: <Widget>[
             TextField(
               controller: _titleController,
               onSubmitted: (_) => _submitForm(),
@@ -68,12 +69,12 @@ class _TransactionFormState extends State<TransactionForm> {
             Container(
               height: 70,
               child: Row(
-                children: [
+                children: <Widget>[
                   Expanded(
                     child: Text(
                       _selectedDate == null
-                          ? 'Nenhuma data selecionada'
-                          : 'Data selecionada: ${DateFormat('d/MM/y').format(_selectedDate)}',
+                          ? 'Nenhum data selecionada!'
+                          : 'Data Selecionada: ${DateFormat('dd/MM/y').format(_selectedDate)}',
                     ),
                   ),
                   FlatButton(
@@ -85,13 +86,13 @@ class _TransactionFormState extends State<TransactionForm> {
                       ),
                     ),
                     onPressed: _showDatePicker,
-                  ),
+                  )
                 ],
               ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [
+              children: <Widget>[
                 RaisedButton(
                   child: Text('Nova Transação'),
                   color: Theme.of(context).primaryColor,
