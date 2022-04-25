@@ -7,7 +7,7 @@ Flutter project made in Cod3r training.
 How to run this project.
 Have flutter and its dependencies installed.
 
-- [First](https://docs.flutter.dev/get-started/install)
+- [Show Documentation](https://docs.flutter.dev/get-started/install)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
